@@ -1,0 +1,29 @@
+.dtHorizontalWrapper {
+    max-width: 80%;
+    padding-left: 10%;
+    
+    }
+#dtHorizontal th, td {
+white-space: nowrap;
+overflow: hidden; /* this is what fixes the expansion */
+text-overflow: ellipsis; /* not supported in all browsers, but I accepted the tradeoff */
+white-space: nowrap;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+} 
+.datatable td {
+    overflow: hidden; /* this is what fixes the expansion */
+    text-overflow: ellipsis; /* not supported in all browsers, but I accepted the tradeoff */
+    white-space: nowrap;
+  }
